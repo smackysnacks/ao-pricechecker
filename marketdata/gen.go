@@ -132,7 +132,6 @@ func main() {
 
 	// get each item info
 	allitems := [][]ItemName{
-		itemsJSON.Items.EquipmentItem,
 		itemsJSON.Items.FarmableItem,
 		itemsJSON.Items.SimpleItem,
 		itemsJSON.Items.ConsumableItem,
