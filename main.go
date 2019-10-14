@@ -1,3 +1,5 @@
+//go:generate go run marketdata/gen.go
+
 package main
 
 import (
