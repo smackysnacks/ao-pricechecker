@@ -17,6 +17,10 @@ func init() {
 }
 
 func main() {
+	// for _, s := range os.Args[1:] {
+	// 	item := marketdata.Closest(s)
+	// 	fmt.Println(item)
+	// }
 	b, err := bot.New(token)
 	if err != nil {
 		fmt.Printf("failed to create bot: %v\n", err)
