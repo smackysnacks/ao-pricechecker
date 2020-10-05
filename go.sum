@@ -16,6 +16,8 @@ github.com/lithammer/fuzzysearch v1.0.2 h1:AjCE2iwc5y+8K+h2nXVc0Pmrpjvu+JVqMgiZ0
 github.com/lithammer/fuzzysearch v1.0.2/go.mod h1:bvAJyokfCQ7Vknrd4Kgc+izmMrPj5CiBAu2t6rK1Kak=
 github.com/lithammer/fuzzysearch v1.1.0 h1:go9v8tLCrNTTlH42OAaq4eHFe81TDHEnlrMEb6R4f+A=
 github.com/lithammer/fuzzysearch v1.1.0/go.mod h1:Bqx4wo8lTOFcJr3ckpY6HA9lEIOO0H5HrkJ5CsN56HQ=
+github.com/lithammer/fuzzysearch v1.1.1 h1:8F9OAV2xPuYblToVohjanztdnPjbtA0MLgMvDKQ0Z08=
+github.com/lithammer/fuzzysearch v1.1.1/go.mod h1:H2bng+w5gsR7NlfIJM8ElGZI0sX6C/9uzGqicVXGU6c=
 github.com/mattn/go-runewidth v0.0.4 h1:2BvfKmzob6Bmd4YsL0zygOqfdFnK7GR4QL06Do4/p7Y=
 github.com/mattn/go-runewidth v0.0.4/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
 github.com/mattn/go-runewidth v0.0.6 h1:V2iyH+aX9C5fsYCpK60U8BYIvmhqxuOL3JZcqc1NB7k=
