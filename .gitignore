@@ -1,3 +1,4 @@
+.cache/
 .vscode/
 pricechecker
 marketdata/items.go
