@@ -60,7 +60,7 @@ func (r *MarketResponses) Table() string {
 	table.AppendBulk(data)
 	table.Render()
 
-	return string(buf.Bytes())
+	return buf.String()
 }
 
 func (r *MarketResponses) Tables(maxlength int) []string {

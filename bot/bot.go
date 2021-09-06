@@ -47,7 +47,7 @@ func (b *Bot) Run() {
 
 	fmt.Println("Bot is running... Press Ctrl-C to exit.")
 	sc := make(chan os.Signal, 1)
-	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
+	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt)
 	<-sc
 
 	b.bot.Close()
@@ -84,7 +84,7 @@ func (b *Bot) commandPriceCheck(s *discordgo.Session, m *discordgo.MessageCreate
 	q := marketdata.Closest(rest)
 	log.Printf("%s: %s\n", rest, q.FriendlyName)
 	if q.UniqueName == "" {
-		s.ChannelMessageSend(m.ChannelID, "Sorry, I'm not sure what you meant")
+		_, _ = s.ChannelMessageSend(m.ChannelID, "Sorry, I'm not sure what you meant")
 		return
 	}
 	marketData, err := marketdata.Query(q.UniqueName)
@@ -101,7 +101,7 @@ func (b *Bot) commandPriceCheck(s *discordgo.Session, m *discordgo.MessageCreate
 		itemOverview = "```" + q.FriendlyName + "```"
 	}
 	if len(itemOverview) > 0 {
-		s.ChannelMessageSend(m.ChannelID, itemOverview)
+		_, _ = s.ChannelMessageSend(m.ChannelID, itemOverview)
 	}
 
 	if len(marketData) > 0 {
