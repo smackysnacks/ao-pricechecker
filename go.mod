@@ -3,7 +3,7 @@ module pricechecker
 go 1.17
 
 require (
-	github.com/bwmarrin/discordgo v0.27.1
+	github.com/bwmarrin/discordgo v0.29.0
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/sajari/fuzzy v1.0.0
 )
